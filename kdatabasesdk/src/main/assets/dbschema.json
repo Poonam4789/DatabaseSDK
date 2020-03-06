@@ -1,0 +1,18 @@
+{
+  "NAME": "employee.sqlite",
+  "VERSION": 1,
+  "QUERIES": [
+    {
+      "ID": "create_employee_table",
+      "TYPE": 1,
+      "VERSION": 1,
+      "TEXT": "CREATE TABLE employee (emp_id int NOT NULL, emp_name varchar(50) NOT NULL, emp_dept varchar(30) default NA);"
+    },
+    {
+      "ID": "update_employee_table_add_dept",
+      "TYPE": 11,
+      "VERSION": 2,
+      "TEXT": "ALTER TABLE employee add emp_dept varchar(30) default NA;"
+    }
+  ]
+}
